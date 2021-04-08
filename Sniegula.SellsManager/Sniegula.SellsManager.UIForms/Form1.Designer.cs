@@ -33,6 +33,12 @@ namespace Sniegula.SellsManager.UIForms
             this.textBoxTrader = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonFilter = new System.Windows.Forms.Button();
+            this.numericUpDownSelledItemsGreaterThan = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBoxSelledNumberLessThen = new System.Windows.Forms.TextBox();
+            this.checkBoxSelledNumberGreaterThan = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSelledItemsGreaterThan)).BeginInit();
             this.SuspendLayout();
             // 
             // listBox1
@@ -69,11 +75,57 @@ namespace Sniegula.SellsManager.UIForms
             this.buttonFilter.UseVisualStyleBackColor = true;
             this.buttonFilter.Click += new System.EventHandler(this.buttonFilter_Click);
             // 
+            // numericUpDownSelledItemsGreaterThan
+            // 
+            this.numericUpDownSelledItemsGreaterThan.Location = new System.Drawing.Point(26, 178);
+            this.numericUpDownSelledItemsGreaterThan.Name = "numericUpDownSelledItemsGreaterThan";
+            this.numericUpDownSelledItemsGreaterThan.Size = new System.Drawing.Size(135, 20);
+            this.numericUpDownSelledItemsGreaterThan.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(26, 159);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(135, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Sprzedano sztuk więcej niż";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(26, 224);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(129, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Sprzedano sztuk mniej niż";
+            // 
+            // textBoxSelledNumberLessThen
+            // 
+            this.textBoxSelledNumberLessThen.Location = new System.Drawing.Point(26, 240);
+            this.textBoxSelledNumberLessThen.Name = "textBoxSelledNumberLessThen";
+            this.textBoxSelledNumberLessThen.Size = new System.Drawing.Size(173, 20);
+            this.textBoxSelledNumberLessThen.TabIndex = 9;
+            // 
+            // checkBoxSelledNumberGreaterThan
+            // 
+            this.checkBoxSelledNumberGreaterThan.AutoSize = true;
+            this.checkBoxSelledNumberGreaterThan.Location = new System.Drawing.Point(184, 184);
+            this.checkBoxSelledNumberGreaterThan.Name = "checkBoxSelledNumberGreaterThan";
+            this.checkBoxSelledNumberGreaterThan.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxSelledNumberGreaterThan.TabIndex = 10;
+            this.checkBoxSelledNumberGreaterThan.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkBoxSelledNumberGreaterThan);
+            this.Controls.Add(this.textBoxSelledNumberLessThen);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.numericUpDownSelledItemsGreaterThan);
             this.Controls.Add(this.buttonFilter);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxTrader);
@@ -81,6 +133,7 @@ namespace Sniegula.SellsManager.UIForms
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSelledItemsGreaterThan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -92,6 +145,11 @@ namespace Sniegula.SellsManager.UIForms
         private System.Windows.Forms.TextBox textBoxTrader;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonFilter;
+        private System.Windows.Forms.NumericUpDown numericUpDownSelledItemsGreaterThan;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBoxSelledNumberLessThen;
+        private System.Windows.Forms.CheckBox checkBoxSelledNumberGreaterThan;
     }
 }
 

@@ -13,11 +13,11 @@ namespace Sniegula.SellsManager.Logic
         static void Main(string[] args)
         {
 
-            CsvFileReader reader = new CsvFileReader();
-            List<Transaction> transactions = new List<Transaction>();
-            transactions = reader.ReadFile();
 
-            Console.WriteLine(transactions.Count);
+            string variableA=null; //wartość domyślna
+            int variableLength = variableA.Length;
+     
+ 
 
             Console.ReadKey();
         }

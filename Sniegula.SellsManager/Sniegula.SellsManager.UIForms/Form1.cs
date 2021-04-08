@@ -51,6 +51,16 @@ namespace Sniegula.SellsManager.UIForms
             TransactionFIlter transactionFIlter = new TransactionFIlter();
             //3 UStawienie parametru filtrowania
             transactionFIlter.TraderName = tradeName;
+
+            CheckBox selledGreaterThenOrEqual = checkBoxSelledNumberGreaterThan;
+            bool userWantsToFIlterBySelledGreaterThenOrEqual = selledGreaterThenOrEqual.Checked;
+            if (userWantsToFIlterBySelledGreaterThenOrEqual) {
+                transactionFIlter.NumberOfSelledItemsGreaterOrEqual = (int?)numericUpDownSelledItemsGreaterThan.Value;
+            }
+
+            TextBox selledLessThenOrEqual = textBoxSelledNumberLessThen;
+            string selledLessThenOrEqualTextValue = selledLessThenOrEqual.Text;
+
             //4 Utworznie obikeu typu klasu serwisowej TransactionService
             TransactionsService transactionsService = new TransactionsService();
             //5 Wywołanie funkcji filtrującej
