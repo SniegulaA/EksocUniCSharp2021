@@ -11,7 +11,7 @@ namespace Sniegula.ClientManager.Logic
     {
         private List<Client> clients = new List<Client>();
 
-        public void generateInitialList() {
+        public void GenerateInitialList() {
 
             Client c1 = new Client();
             c1.Age = 18;

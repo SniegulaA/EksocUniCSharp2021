@@ -24,7 +24,7 @@ namespace Sniegula.ClientManager.UIForms
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            clientManager.generateInitialList();
+            clientManager.GenerateInitialList();
             List<Client> initialClients = clientManager.GetAllClients();
             showClients(initialClients);
 

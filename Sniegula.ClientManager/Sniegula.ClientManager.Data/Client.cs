@@ -17,7 +17,7 @@ namespace Sniegula.ClientManager.Data
 
         public override string ToString()
         {
-            return Name + " " + Surname + " Wiek: " + Age + " Kwota: " + " OrderPrice: " + OrderPrice;
+            return Name + " " + Surname + " Wiek: " + Age + " Kwota: "+ OrderPrice;
 
         }
 
