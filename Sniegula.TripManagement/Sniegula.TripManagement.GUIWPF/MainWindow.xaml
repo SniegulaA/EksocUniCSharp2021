@@ -1,0 +1,27 @@
+﻿<Window x:Class="Sniegula.TripManagement.GUIWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sniegula.TripManagement.GUIWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000">
+    <Grid>
+        <ListBox x:Name="ListBoxPeople" HorizontalAlignment="Left" Height="240" Margin="66,98,0,0" VerticalAlignment="Top" Width="333">
+        </ListBox>
+        <DataGrid x:Name="DataGridPeople" HorizontalAlignment="Left" Height="240" Margin="494,98,0,0" VerticalAlignment="Top" Width="352">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Imię" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Nazwisko" Binding="{Binding Surname}"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Label x:Name="Label1" Content="Uczestnicy wycieczki" HorizontalAlignment="Left" Margin="83,46,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="MyTextBox1" HorizontalAlignment="Left" Height="23" Margin="494,58,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Dodaj uczestnika" HorizontalAlignment="Left" Margin="494,19,0,0" VerticalAlignment="Top" Width="185" Click="Button_Click"/>
+        <TextBox x:Name="TextBoxAmount" HorizontalAlignment="Left" Height="24" Margin="228,402,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="231"/>
+        <Label Content="Kwota wpłacana" HorizontalAlignment="Left" Margin="83,402,0,0" VerticalAlignment="Top"/>
+        <Button Content="Wpłać" HorizontalAlignment="Left" Margin="83,454,0,0" VerticalAlignment="Top" Width="376" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
